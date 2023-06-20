@@ -2,7 +2,7 @@ name: Barker, Griffeth
 enableToc: true
 openToc: false
 enableLinkPreview: true
-enableLatex: true
+enableLatex: false
 enableCodeBlockTitle: true
 enableCodeBlockCopy: true
 enableCallouts: true
@@ -18,7 +18,7 @@ search:
   operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
   operandIndexId: "REPLACE-WITH-YOUR-OPERAND-INDEX-ID"
 description:
-  Intermittent musings from yet another systems administrator.
+  "Intermittent musings from yet another systems administrator."
 page_title:
   "blog.griff.systems"
 links:
