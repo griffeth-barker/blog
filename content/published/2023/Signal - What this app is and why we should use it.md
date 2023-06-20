@@ -1,5 +1,6 @@
 ---
 title: "Signal - What this app is and why we should use it"
+enableToc: true
 tags:
 - software
 - privacy
