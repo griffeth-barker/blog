@@ -1,6 +1,6 @@
 ---
 title: "blog.griff.systems"
-enableToc: true
+enableToc: false
 ---
 
 # Achievement Get! 
