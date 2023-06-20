@@ -10,6 +10,11 @@ Welcome to another intermittently updated blog. This site is a project of mine t
 This blog is hosted via [GitHub Pages](https://pages.github.com/), using the [Hugo SSG](https://gohugo.io/) (static-site generator). The site content is written and managed in [Obsidian](https://obsidian.md/), which is my preferred knowledge management/notetaking application.
 
 # About the Author
+![[notes/attachments/profile_ai.png]]
+
+>[!info]
+>AI-generated profile picture
+
 Griffeth Barker is an IT Systems Administrator, husband, and lover of technology, board/card/dice/video games, analog photography, racquetball, and all things organization.
 
 ---
