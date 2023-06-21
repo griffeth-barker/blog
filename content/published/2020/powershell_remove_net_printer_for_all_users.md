@@ -1,8 +1,5 @@
 ---
-title: "powershell_remove_net_printer_for_all_users"
-author: "{{author}}"
-published: "{{publish_date}}"
-category: "{{category}}"
+title: "Use PowerShell to remove a network printer for all users"
 tags:
 - powershell
 - windows

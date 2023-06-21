@@ -1,5 +1,5 @@
 ---
-title: "Password and why you should be using one"
+title: "Password managers and why you should be using one"
 tags:
 - software
 - security
