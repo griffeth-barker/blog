@@ -14,10 +14,10 @@ You can browse the blog by visiting the [Table of Contents](/toc). You can retur
 # 🙋‍♂️ About the Author
 Hi, my name is Griff 👋 and I am an IT Systems Administrator, husband, and lover of technology, bard/card/dice/video games, analog photography, racquetball, and all things organization and automation.
 
->[!info]  About this Site
-This blog is hosted via [GitHub Pages](https://pages.github.com/), using the [Hugo SSG](https://gohugo.io/) (static-site generator); this is packaged nicely by Jacky Zhao's [Quartz](https://quartz.jzhao.xyz/). The site content is written in [Markdown](https://www.markdownguide.org/)and managed in [Obsidian](https://obsidian.md/), which is my preferred knowledge management/notetaking application.
+>[!faq]  About this Site
+>This blog is hosted via [GitHub Pages](https://pages.github.com/), using the [Hugo SSG](https://gohugo.io/) (static-site generator); this is packaged nicely by Jacky Zhao's [Quartz](https://quartz.jzhao.xyz/). The site content is written in [Markdown](https://www.markdownguide.org/)and managed in [Obsidian](https://obsidian.md/), which is my preferred knowledge management/notetaking application.
 >
-Being able to write in Markdown makes things much simpler for me, and since I already write Markdown in Obsidian and had a GitHub account with a couple of other repositories that I push notes to, it just seemed natural to bring those things together for this blog. I was very lucky to stumble onto the Quartz project which made it pretty simple to get going. 
+>Being able to write in Markdown makes things much simpler for me, and since I already write Markdown in Obsidian and had a GitHub account with a couple of other repositories that I push notes to, it just seemed natural to bring those things together for this blog. I was very lucky to stumble onto the Quartz project which made it pretty simple to get going. 
 >
 >Obsidian offers community plugins, one of which is "Obsidian Git" which enables me to commit and push articles to the blog as I please. This setup works really nicely!
 
