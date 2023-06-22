@@ -41,15 +41,13 @@ Obsidian is a Markdown editor that is fantastic for notetaking and organizing yo
 Large Language Models (LLMs) and artificial intelligence (AI) in general are becoming much more prominent and readily-accessible.  There are plenty of things they are great at accomplishing, but 
 there are two reasons I recommend using one of your choice.
 
-Firstly, they're better search engines*. You'll likely find that you get significantly better results asking ChatGPT or Bard questions, as opposed to Googling them. That said, learning how to get what you want out of these LLMs is a science, and takes a bit of learning.
+Firstly, they're better search engines (assuming they have access to the internet, unlike OpenAI's GPT-3). You'll likely find that you get significantly better results asking ChatGPT or Bard questions, as opposed to Googling them. That said, learning how to get what you want out of these LLMs is a science, and takes a bit of learning.
 
 Secondly, they're surprisingly decent at writing you starter code. Teams I've worked with have utilized it to write out the beginnings of switch configurations, PowerShell scripts, Ansible playbooks, etc. Of course, the LLMs will get things wrong and you certainly need to go over everything they generate, but they'll get you pretty close, very quickly.
 
 This is going to be the way of the future, so we might as well embrace it now!
 
 [OpenAI ChatGPT](https://openai.com/blog/chatgpt) | [Google Bard](https://bard.google.com/) | And others...
-
-	*Assuming they have access to the internet, unlink OpenAI's GPT-3.
 
 # Hardware
 
