@@ -10,7 +10,7 @@ You've found my blog! This site is a small side project of mine. I take a lot of
 
 The occasional non-technical post may find it's way here as well, since I love all things organization, and recently dipped my toes into the Fediverse (or "federated social universe"), which is comprised of a lot of tech concepts I find interesting, but aren't directly related to IT.
 
-## Dive In
+# Dive In
 You can browse the blog by going to the [Table of Contents](/toc).
 
 # About this Site

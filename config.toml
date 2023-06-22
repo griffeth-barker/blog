@@ -1,4 +1,4 @@
-baseURL = "https://griffeth-barker.github.io/blog"
+baseURL = "https://blog.griff.systems/"
 languageCode = "en-us"
 relativeURLs = false
 disablePathToLower = true
