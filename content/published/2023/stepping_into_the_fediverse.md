@@ -11,6 +11,7 @@ tags:
 There are a variety of services in the Fediverse including open-source and other alternatives to popular sites such as Facebook, Twitter, Reddit, Instagram, YouTube, etc.
 
 ![fediverse-branches-axbom-30-CC-BY-SA.png](/published/media/fediverse-branches-axbom-30-CC-BY-SA.png)
+*The above image is from [axbom.com](https://axbom.com/fediverse/). Be sure to check out their site!*
 
 A quick overview of some of the analogous services:
 
