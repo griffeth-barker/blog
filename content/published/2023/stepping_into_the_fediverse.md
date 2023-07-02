@@ -45,7 +45,8 @@ You can find relatively up-to-date statistics for the major services and their m
 ## Getting Started with Federated Social Media
 I recommend looking at what your objective is. For some people, it will be replacing a particular service such as Twitter or Reddit or whatnot. Look at what services are available in the Fediverse, and pick one as your replacement. As an example, you could join Mastodon instead of using Twitter. Visit the service's main website. Find an instance, and create an account. Once
 
->[!tip] Reddit Refugees
+>[!tip] Reddit Refugees  
+>
 >Are you a "Reddit refugee" looking for a new link-aggregator following Reddit's terrible handling of their API pricing changes, community support, and treatment of platform moderators? You'll specifically want [this guide](https://lemmy.world/post/895639) from [@albatross@lemmy.world](https://lemmy.world/u/albatross).
 >
 > Furthermore, ex-Redditors may also find these websites helpful in filling their new feeds with content:
