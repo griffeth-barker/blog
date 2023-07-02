@@ -12,6 +12,7 @@ The occasional non-technical post may find it's way here as well, since I love a
 You can browse the blog by visiting the [Table of Contents](/toc). You can return to this page at any time by clicking the site title at the top of the page.
 
 # 🙋‍♂️ About the Author
+![Profile Photo](/content/published/media/profile_ai.png)
 Hi, my name is Griff 👋 and I am an IT Systems Administrator, husband, and lover of technology, bard/card/dice/video games, analog photography, racquetball, and all things organization and automation.
 
 >[!faq]  About this Site  
