@@ -3,7 +3,7 @@ title: "Table of Contents"
 ---
 
 # 2023
-- [Stepping into the Fediverse](/content/published/2023/stepping_into_the_fediverse)
+- [Stepping into the Fediverse](/published/2023/stepping_into_the_fediverse)
 - [My favorite tools as a systems administrator](/published/2023/my_favorite_tools_as_a_systems_administrator)
 - [Signal - What this app is and why we should use it](published/2023/signal_what_this_app_is_and_why_we_should_use_it.md) 
 
