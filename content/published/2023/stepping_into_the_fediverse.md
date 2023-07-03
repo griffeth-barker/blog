@@ -1,5 +1,6 @@
 ---
 title: "Stepping into the Fediverse"
+date: 2023-07-01
 tags:
   - decentralized services
   - social media
