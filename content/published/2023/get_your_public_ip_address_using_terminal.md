@@ -62,3 +62,4 @@ Want to learn more about this? Here are some additional resources about what we 
 - [Invoke-WebRequest Documentation](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-7.3)
 - [Invoke-RestMethod Documentation](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod?view=powershell-7.3)
 - [Curl Documentation](https://curl.se/docs/manpage.html)
+- [Wget Documentation](https://www.gnu.org/software/wget/manual/wget.html)
