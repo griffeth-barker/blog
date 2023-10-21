@@ -29,14 +29,24 @@ The `Invoke-WebRequest` command sends requests to a URL. It then parses (reads t
 Similar to `Invoke-WebRequest`, the `Invoke-RestMethod` command sends requests to a URL, but specifically using Representational State Transfer (REST); this requires the service at the target URL to support REST, but also allows for more richly formatted data. PowerShell formats the response based to the data type. 
 
 ```PowerShell
-Invoke-RestMethod -Method GET -Uri 'https://ifconfig.me/ip'
+Invoke-RestMethod -Method GET -Uri ifconfig.me/ip
 ```
+
 ## Bash
+### curl
 curl is a tool for transferring data from or to a server using URLs. It supports these protocols: DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS.
 
 ```Bash
-curl https://ifconfig.me/ip
+curl ifconfig.me/ip
 ```
+
+### wget
+GNU Wget is a free utility for non-interactive download of files from the Web.  It supports HTTP, HTTPS, and FTP protocols, as well as retrieval through HTTP proxies. We can use this to get the webpage and display it in terminal instead of writing it out to a file.
+
+```Bash
+wget -qO- ifconfig.me/ip
+```
+
 # Conclusion
 Regardless of the method that you use above, if you're querying ifconfig.me then the output returned to you in your terminal should look like this (though obviously the IP address would be whatever public IP address you're currently using):
 
