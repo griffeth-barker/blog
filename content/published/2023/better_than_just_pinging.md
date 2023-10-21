@@ -12,7 +12,11 @@ Test-NetConnection server -Port 443
 This will ping the server and also attempt a TCP connect on Port 443. The successful results look something like this:
 
 ```output
-ComputerName     : server                                                          RemoteAddress    : 192.168.0.1                                                        RemotePort       : 443                                                                 InterfaceAlias   : Ethernet                                                  SourceAddress    : 192.168.0.2
+ComputerName     : server
+RemoteAddress    : 192.168.0.1
+RemotePort       : 443
+InterfaceAlias   : Ethernet
+SourceAddress    : 192.168.0.2
 PingSucceeded    : True
 TcpTestSucceeded : True
 ```
@@ -20,7 +24,11 @@ TcpTestSucceeded : True
 If the ping is successful but the test fails to connect on the specified port, the output looks something like this:
 
 ```output
-ComputerName     : server                                                          RemoteAddress    : 192.168.0.1                                                        RemotePort       : 443                                                                 InterfaceAlias   : Ethernet                                                  SourceAddress    : 192.168.0.2
+ComputerName     : server
+RemoteAddress    : 192.168.0.1
+RemotePort       : 443
+InterfaceAlias   : Ethernet
+SourceAddress    : 192.168.0.2
 PingSucceeded    : True
 TcpTestSucceeded : False
 ```
