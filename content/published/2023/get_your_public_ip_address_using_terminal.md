@@ -48,7 +48,7 @@ wget -qO- ifconfig.me/ip
 ```
 
 # Conclusion
-Regardless of the method that you use above, if you're querying ifconfig.me then the output returned to you in your terminal should look like this (though obviously the IP address would be whatever public IP address you're currently using):
+Regardless of the method that you use above, if you're querying ifconfig.me/ip then the output returned to you in your terminal should look like this (though obviously the IP address would be whatever public IP address you're currently using):
 
 ```output
 1.1.1.1
