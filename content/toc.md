@@ -8,6 +8,7 @@ title: "Table of Contents"
 - [Signal - What this app is and why we should use it](published/2023/signal_what_this_app_is_and_why_we_should_use_it.md) 
 - [Get Your Public IP Address Using the Terminal](published/2023/get_your_public_ip_address_using_terminal.md)
 - [Better than Just Pinging](published/2023/better_than_just_pinging.md)
+- [Get a List of a Domain User's Recent Lockouts](published/2023/get_domain_user_lockouts.md)
   
 # 2022
 - [Fix 'cluster not ready - no quorum?' error in Proxmox VE](/published/2022/fix_cluster_not_ready_no_quorum_in_proxmox.md)
