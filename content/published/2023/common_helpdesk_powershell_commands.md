@@ -153,7 +153,7 @@ Set-DnsClient -InterfaceIndex -ServerAddresses ("dns1.yourdomain.com","dns2.your
 Check out [Better than Just Pinging](published/2023/better_than_just_pinging.md) as well.
 
 ## Printers
-Check out [Administer Windows Core Print Servers](published/2023/administer_windows_core_print_servers.md), as the commands described there are relevant in general.
+Check out [Administer Windows Core Print Servers](published/2023/administer_windows_core_servers/), as the commands described there are relevant in general.
 
 ## Clipboard Management
 For most commands, you can take the output and copy it to your clipboard using `Set-Clipboard`. As an example, let's get the computer information and copy it:
