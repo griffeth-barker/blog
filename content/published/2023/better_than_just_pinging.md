@@ -12,7 +12,7 @@ I'm sure we have all pinged something during troubleshooting at one point or ano
 # PowerShell
 PowerShell has a great command built in `Test-NetConnection`. This command lets you both ping the target host, but also test if you can connect on a specific port. This is extremely helpful when troubleshooting web services or interfaces that listen on specific ports.
 
-Let's say you have some kind of interface server and you're trying to verify if it is listening properly. You could just `ping` the server, but all that tells you is that the remote host is connected to the network. It doesn't mean anything as far as that interface service goes. Say your server is "sever" and it has an interface that listens on port 443. Instead of just pinging, you can do this:
+Let's say you have some kind of interface server and you're trying to verify if it is listening properly. You could just `ping` the server, but all that tells you is that the remote host is connected to the network. It doesn't mean anything as far as that interface service goes. Say your server is "server" and it has an interface that listens on port 443. Instead of just pinging, you can do this:
 
 ```PowerShell
 Test-NetConnection server -Port 443
@@ -76,7 +76,7 @@ Connection to 192.168.0.1 443 port [tcp/http] succeeded!
 If the host is pingable but the test failed to connect on the specified port, it will look like this:
 
 ```output
-nc: connect to 192.168.200.1 port 8181 (tcp) failed: Connection refused
+nc: connect to 192.168.200.1 port 443 (tcp) failed: Connection refused
 ```
 
 If the host isn't even pingable, then the command hangs and does not return output.
