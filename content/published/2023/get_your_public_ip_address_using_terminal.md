@@ -16,7 +16,7 @@ You've probably used websites such as **WhatIsMyIPAddress** and **IPChicken** be
 
 If you were to navigate to https://ifconfig.me/ip in your web browser of choice, you would see nothing except a public IP address.
 
-We can use several several commands to interact with these websites and get our current public IP address from this URL.
+We can use several several commands to interact with this site and get our current public IP address from this URL.
 
 ## PowerShell
 ### Invoke-WebRequest
