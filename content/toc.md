@@ -10,6 +10,7 @@ title: "Table of Contents"
 - [Better than Just Pinging](published/2023/better_than_just_pinging.md)
 - [Get a List of a Domain User's Recent Lockouts](published/2023/get_domain_user_lockouts.md)
 - [Administer Windows Core Print Servers](/published/2023/administer_windows_core_servers.md)
+- [Common Helpdesk PowerShell Commands](published/2023/common_helpdesk_powershell_commands.md)
   
 # 2022
 - [Fix 'cluster not ready - no quorum?' error in Proxmox VE](/published/2022/fix_cluster_not_ready_no_quorum_in_proxmox.md)
