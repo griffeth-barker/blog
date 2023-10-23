@@ -1,7 +1,7 @@
 ---
 title: "Table of Contents"
 ---
-
+Blog posts by year published.
 # 2023
 - [Stepping into the Fediverse](/published/2023/stepping_into_the_fediverse)
 - [My favorite tools as a systems administrator](/published/2023/my_favorite_tools_as_a_systems_administrator)
