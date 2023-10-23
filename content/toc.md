@@ -12,6 +12,7 @@ Blog posts by year published.
 - [Administer Windows Core Print Servers](/published/2023/administer_windows_core_print_servers.md)
 - [Common Helpdesk PowerShell Commands](published/2023/common_helpdesk_powershell_commands.md)
 - [Configure Microsoft SQL Server Auditing](published/2023/configure_mssql_server_auditing.md)
+- [Search Log Files Using PowerShell](/published/2023/search_log_files_using_powershell.md)
 
 # 2022
 - [Fix 'cluster not ready - no quorum?' error in Proxmox VE](/published/2022/fix_cluster_not_ready_no_quorum_in_proxmox.md)
