@@ -11,7 +11,8 @@ title: "Table of Contents"
 - [Get a List of a Domain User's Recent Lockouts](published/2023/get_domain_user_lockouts.md)
 - [Administer Windows Core Print Servers](/published/2023/administer_windows_core_print_servers.md)
 - [Common Helpdesk PowerShell Commands](published/2023/common_helpdesk_powershell_commands.md)
-  
+- [Configure Microsoft SQL Server Auditing](published/2023/configure_mssql_server_auditing.md)
+
 # 2022
 - [Fix 'cluster not ready - no quorum?' error in Proxmox VE](/published/2022/fix_cluster_not_ready_no_quorum_in_proxmox.md)
 - [Fix Proxmox node cannot update packages using apt-get](/published/2022/fix_proxmox_node_cannot_update_packages_via_apt-get.md)
