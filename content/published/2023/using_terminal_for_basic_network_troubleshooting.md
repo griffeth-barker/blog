@@ -34,7 +34,7 @@ Interface: 172.16.30.7 --- 0x36
 
 **PowerShell:**
 ```PowerShell
-Get-NetNeighbor -IPAddress 172.16.30.1
+Get-NetNeighbor -IPAddress '172.16.30.1'
 ```
 
 **Output:**
@@ -60,7 +60,7 @@ arp -a | findstr /i /c:"90-6C-AC-4B-60-56"
 
 **PowerShell**:
 ```PowerShell
-Get-NetNeighbor -LinkLayerAddress 90-6C-AC-4B-60-56
+Get-NetNeighbor -LinkLayerAddress '90-6C-AC-4B-60-56'
 ```
 
 **Output**:
@@ -151,7 +151,7 @@ Approximate round trip times in milli-seconds:
 
 **PowerShell:**
 ```PowerShell
-Test-NetConnection 172.16.30.1
+Test-NetConnection '172.16.30.1'
 ```
 
 **Output:**
@@ -244,7 +244,7 @@ Trace complete.
 
 **PowerShell:**
 ```PowerShell
-Test-NetConnection 8.8.8.8 -TraceRoute
+Test-NetConnection '8.8.8.8' -TraceRoute
 ```
 
 **Output:**
@@ -293,7 +293,7 @@ netstat -an | findstr ":PORT.*:[^:]*$"
 
 **PowerShell:**
 ```PowerShell
-Get-NetTCPConnection -LocalPort PORT
+Get-NetTCPConnection -LocalPort 'PORT'
 ```
 
 > Note: Again, `PORT` should be replaced with the local port you're interested in investigating.
@@ -324,7 +324,7 @@ netstat -an | findstr ":PORT[^:]*$"
 
 **PowerShell:**
 ```PowerShell
-Get-NetTCPConnection -RemotePort 443
+Get-NetTCPConnection -RemotePort '443'
 ```
 
 **Output:**
@@ -341,7 +341,7 @@ Rather than list TCP sessions, we can actually test a connection to a remote dev
 
 **PowerShell:**
 ```PowerShell
-Test-NetConnection 172.16.30.1 -Port 80
+Test-NetConnection '172.16.30.1' -Port '80'
 ```
 
 **Output:**
@@ -390,7 +390,7 @@ Addresses:  172.217.12.142
 
 **PowerShell:**
 ```PowerShell
-Resolve-DnsName google.com
+Resolve-DnsName 'google.com'p
 ```
 
 **Output:**
