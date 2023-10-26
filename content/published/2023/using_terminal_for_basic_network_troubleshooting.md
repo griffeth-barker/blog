@@ -390,7 +390,7 @@ Addresses:  172.217.12.142
 
 **PowerShell:**
 ```PowerShell
-Resolve-DnsName 'google.com'p
+Resolve-DnsName 'google.com'
 ```
 
 **Output:**
