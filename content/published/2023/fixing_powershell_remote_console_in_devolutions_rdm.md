@@ -89,6 +89,6 @@ Then, for the session entry in question, navigate to *Properties > General > Adv
 At this point, I was be able to launch the session entry, the process described in the Background section of this post worked properly, and the end result was a PSSession to the host defined in the session entry's properties.
 
 # Additional Resources
-- This is the forum post that I revived and discussed the issue with a developer from Devolutions and eventually reached a solution, despite it being a slightly different issue: [Embedded powershell tools - potential bug found with it.. (devolutions.net)](https://forum.devolutions.net/topics/31127/embedded-powershell-tools--potential-bug-found-with-it)
+- This is the forum post that I revived where I discussed the issue with a developer from Devolutions and eventually reached the workaround provided in this article, despite it being a slightly different issue: [Embedded powershell tools - potential bug found with it.. (devolutions.net)](https://forum.devolutions.net/topics/31127/embedded-powershell-tools--potential-bug-found-with-it)
 - You can find the Devolutions-developed distribution of Windows Terminal on [GitHub](https://github.com/Devolutions/wt-distro).
 - Information on the SetConsoleScreenBufferSize function in the Console API can be found on [Microsoft Learn](https://learn.microsoft.com/en-us/windows/console/setconsolescreenbuffersize).
