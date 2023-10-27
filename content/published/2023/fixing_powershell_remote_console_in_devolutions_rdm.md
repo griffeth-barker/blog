@@ -49,8 +49,6 @@ This issue results from this resizing and reparenting process. When the Console 
 
 The Console Host's window size must be changed before the buffer size is set. The code to shrink the window *first* is not yet existent in RDM. If the Buffer size is set first and the values for this property are incompatible with the Window size, the exception shown in the Problem section of this article will be thrown.
 
-Because the code to resize the window *first* is not currently existent in Remote Desktop Manager, I first needed to edit Buffer size in
-
 # Workaround
 The minimum Buffer Size is determined by GetSystemMetrics(SM_CXMIN) + GetSystemMetrics(SM_CYMIN) in Windows. These values can be determined using the following code snippet:
 
