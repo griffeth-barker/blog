@@ -9,7 +9,7 @@ You've found my blog ! This site is a small side project of mine. I take a lot o
 The occasional non-technical post may find it's way here as well, since I love all things organization, and recently dipped my toes into the Fediverse (or "federated social universe"), which is comprised of a lot of tech concepts I find interesting, but aren't directly related to IT.
 
 # 🌊 Dive right in, the blog posts are warm!
-You can browse the blog by visiting the [Table of Contents](toc_by_year.md). You can return to this page at any time by clicking the site title at the top of the page.
+You can browse the blog by visiting the [Table of Contents](private/toc_by_year.md). You can return to this page at any time by clicking the site title at the top of the page.
 
 # 🙋‍♂️ About the Author
 Hi, my name is Griff 👋 and I am an IT Systems Administrator, husband, and lover of technology, bard/card/dice/video games, analog photography, racquetball, and all things organization and automation.
