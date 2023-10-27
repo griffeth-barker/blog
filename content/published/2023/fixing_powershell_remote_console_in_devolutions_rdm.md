@@ -28,7 +28,7 @@ At line:32 char:13
 ```
 
 # Environment
-I identified this issue in Remote Desktop Manager version 2023.2.28.0, though Devolutions forums indicate such issues may have existed in prior versions as well. The workstations with RDM installed was Windows 11 23H2 with Windows PowerShell 5.1 as the default PowerShell environment, though the issue appears to be operating system agnostic, as well as architecture agnostic.
+I identified this issue in Remote Desktop Manager version 2023.2.28.0, though Devolutions forums indicate such issues may have existed in prior versions as well. The workstation with RDM installed was Windows 11 23H2 with Windows PowerShell 5.1 as the default PowerShell environment, though the issue appears to be operating system agnostic, as well as architecture agnostic.
 
 During troubleshooting, I found that if I installed PowerShell 7 and set the entry's terminal type to PowerShell 7 instead of Default or Windows PowerShell 5.1 and changed the shell type from Console Host to Windows Terminal, that I was able to use the session entry as expected, though this requires the deployment of PowerShell 7 to RDM users, which may not meet the needs of all organizations and environments.
 
@@ -86,7 +86,7 @@ In the same section, I also changed the Window size Rows to the `136` value and 
 
 Then, for the session entry in question, navigate to *Properties > General > Advanced* and uncheck the **Resize window** checkbox, then save the changes.
 
-At this point, I was be able to launch the session entry and the process described in the Background section of this post should work properly, and the end result was a PSSession to the host defined in the session entry's properties.
+At this point, I was be able to launch the session entry, the process described in the Background section of this post worked properly, and the end result was a PSSession to the host defined in the session entry's properties.
 
 # Additional Resources
 - This is the forum post that I revived and discussed the issue with a developer from Devolutions and eventually reached a solution, despite it being a slightly different issue: [Embedded powershell tools - potential bug found with it.. (devolutions.net)](https://forum.devolutions.net/topics/31127/embedded-powershell-tools--potential-bug-found-with-it)
