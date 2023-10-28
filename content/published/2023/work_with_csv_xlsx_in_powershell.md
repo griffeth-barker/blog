@@ -1,5 +1,5 @@
 ---
-title: Working with CSV and XLSX in PowerShell
+title: Working with CSV and XLSX Files in PowerShell
 tags:
   - Terminal
   - PowerShell
