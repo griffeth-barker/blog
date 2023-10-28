@@ -42,7 +42,7 @@ index color
 5     orange
 ```
 
-You can then reference properties of the object using all your usual methods of interacting with objects.
+You can then reference properties of the object using all your usual preferred methods of interacting with objects. In this example I'm simply using the dot operator to select each individual property of the object (the columns), and also using a `Where-Object` to filter down to a specific "row" of the object.
 
 ```output
 griff@vm923762 ~ $var.index
@@ -66,7 +66,7 @@ index color
 1     red
 ```
 
-The above shows a foundation of how this can be useful in your automations, as you can load a dataset into PowerShell and then interact with the object as you would any other object.
+The above shows a foundation of how this can be useful in your automations, as you can load a dataset into PowerShell and then interact with the object as you would any other object, especially iterating through the object.
 
 ## Modifying CSV Files
 We can modify the data in the object which resulted from our import of the CSV file as well. This is done by iterating through the properties of the object and then altering data based on conditions we define. Here's an example:
