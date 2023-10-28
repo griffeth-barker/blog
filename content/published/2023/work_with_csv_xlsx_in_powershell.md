@@ -9,7 +9,7 @@ tags:
 # Introduction
 PowerShell is a powerful scripting language that can automate a wide variety of tasks. One common activity that IT professionals need to perform is working with data files such as CSV and XLSX files, both of which are typically associated with Microsoft Excel or other workbook/worksheet applications. Excel files are widely used for storing and analyzing data, while CSV files are simple text files that contain comma-separated values but can be displayed in Excel similarly to an Excel workbook, albeit without formatting.
 
-In this blog post, we will take a look at how to use PowerShell to read, write, and manipulate Excel and CSV files. You will learn how to use built-in cmdlets, such as Import-Csv and Export-Csv, as well as a third-party module, **ImportExcel**, to work with these data formats. By the end of this blog post, you will be able to easily use PowerShell to handle CSV and XLSX files!
+In this blog post, we will take a look at how to use PowerShell to read, write, and manipulate Excel and CSV files. You will learn how to use built-in cmdlets, such as `Import-Csv` and `Export-Csv`, as well as a third-party module, **ImportExcel**, to work with these data formats. By the end of this blog post, you will be able to easily use PowerShell to handle CSV and XLSX files!
 
 # Working with Comma-separated Values Files
 PowerShell natively supports interacting with CSV files, which can enable you to get datasets into your scripts, and also provides an easy way to create objects to interact with in your scripts.
