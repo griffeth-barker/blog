@@ -6,7 +6,7 @@ Blog posts by topic.
 ## Adobe
 - [Fix "Please wait while the document is being prepared for" message in Adobe Reader](published/2021/fix_please_wait_while_the_document_is_being_prepared_for_message_in_adobe_reader.md) 
 ## Ansible
-Playbook still executing plays...check back soon!
+`TASK [Gathering Facts]
 ## Devolutions
 - [Fixing PowerShell Remote Console in Devolutions Remote Desktop Manager](published/2023/fixing_powershell_remote_console_in_devolutions_rdm.md)
 ## Fediverse
@@ -31,6 +31,7 @@ Playbook still executing plays...check back soon!
 - [Use PowerShell to remove a network printer for all users of a computer](/published/2020/powershell_remove_net_printer_for_all_users.md) 
 - [Use PowerShell to setup a network printer for all users of a computer](/published/2020/powershell_setup_net_printer_for_all_users.md)
 - [Using the Terminal for Basic Network Troubleshooting](published/2023/using_terminal_for_basic_network_troubleshooting.md)
+- [Working with CSV and XLSX files in PowerShell](published/2023/work_with_csv_xlsx_in_powershell.md)
 ## Proxmox Virtual Environment
 - [Fix 'cluster not ready - no quorum?' error in Proxmox VE](/published/2022/fix_cluster_not_ready_no_quorum_in_proxmox.md)
 - [Fix Proxmox node cannot update packages using apt-get](/published/2022/fix_proxmox_node_cannot_update_packages_via_apt-get.md)
