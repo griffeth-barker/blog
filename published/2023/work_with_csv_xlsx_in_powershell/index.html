@@ -1,0 +1,170 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="Introduction PowerShell is a powerful scripting language that can automate a wide variety of tasks. common activity that IT professionals need to perform is working with data files such as CSV and XLSX files, both of which are typically associated with Microsoft Excel or other workbook/worksheet applications."><meta property="og:title" content="Working with CSV and XLSX in PowerShell"><meta property="og:description" content="Introduction PowerShell is a powerful scripting language that can automate a wide variety of tasks. common activity that IT professionals need to perform is working with data files such as CSV and XLSX files, both of which are typically associated with Microsoft Excel or other workbook/worksheet applications."><meta property="og:type" content="website"><meta property="og:image" content="https://blog.griff.systems/icon.png"><meta property="og:url" content="https://blog.griff.systems/published/2023/work_with_csv_xlsx_in_powershell/"><meta property="og:width" content="200"><meta property="og:height" content="200"><meta name=twitter:card content="summary"><meta name=twitter:title content="Working with CSV and XLSX in PowerShell"><meta name=twitter:description content="Introduction PowerShell is a powerful scripting language that can automate a wide variety of tasks. common activity that IT professionals need to perform is working with data files such as CSV and XLSX files, both of which are typically associated with Microsoft Excel or other workbook/worksheet applications."><meta name=twitter:image content="https://blog.griff.systems/icon.png"><title>Working with CSV and XLSX in PowerShell</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://blog.griff.systems//icon.png><link href=https://blog.griff.systems/styles.80333fa2099c0bee674efa435fde378c.min.css rel=stylesheet><link href=https://blog.griff.systems/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://blog.griff.systems/js/darkmode.c869d3a61240a800a16e2c2547d7ba0e.min.js></script>
+<script src=https://blog.griff.systems/js/util.00639692264b21bc3ee219733d38a8be.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1></script>
+<script src=https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1></script>
+<script defer src=https://blog.griff.systems/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js></script>
+<script defer src=https://blog.griff.systems/js/code-title.ce4a43f09239a9efb48fee342e8ef2df.min.js></script>
+<script defer src=https://blog.griff.systems/js/clipboard.2913da76d3cb21c5deaa4bae7da38c9f.min.js></script>
+<script defer src=https://blog.griff.systems/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!1,PRODUCTION=!0,BASE_URL="https://blog.griff.systems/",fetchData=Promise.all([fetch("https://blog.griff.systems/indices/linkIndex.4229475620fb81ed952ccb74ff48d4cf.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://blog.griff.systems/indices/contentIndex.8aab203d54c11a4b2609d3ce3db891be.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://blog.griff.systems",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!1;drawGraph("https://blog.griff.systems",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()});function a(n){const e=n.target,t=e.className.split(" "),s=t.includes("broken"),o=t.includes("internal-link");plausible("Link Click",{props:{href:e.href,broken:s,internal:o,graph:!1}})}const r=document.querySelectorAll("a");for(link of r)link.className.includes("root-title")&&link.addEventListener("click",a,{once:!0})},init=()=>{addCopyButtons(),addTitleToCodeBlocks()}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/blog.griff.systems\/js\/router.d6fe6bd821db9ea97f9aeefae814d8e7.min.js"
+    attachSPARouting(init, render)
+  </script><script defer data-domain=blog.griff.systems src=https://plausible.io/js/script.js></script>
+<script>window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)}</script></head><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://blog.griff.systems/js/full-text-search.e6e2e0c213187ca0c703d6e2c7a77fcd.min.js></script><div class=singlePage><header><h1 id=page-title><a class=root-title href=https://blog.griff.systems/>blog.griff.systems</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>Working with CSV and XLSX in PowerShell</h1><p class=meta>Last updated
+Oct 27, 2023</p><ul class=tags><li><a href=https://blog.griff.systems/tags/Terminal/>Terminal</a></li><li><a href=https://blog.griff.systems/tags/powershell/>Powershell</a></li><li><a href=https://blog.griff.systems/tags/TerminalTipTuesday/>Terminal tip tuesday</a></li><li><a href=https://blog.griff.systems/tags/excel/>Excel</a></li></ul><a href=#introduction><h1 id=introduction><span class=hanchor arialabel=Anchor></span>Introduction</h1></a><p>PowerShell is a powerful scripting language that can automate a wide variety of tasks. common activity that IT professionals need to perform is working with data files such as CSV and XLSX files, both of which are typically associated with Microsoft Excel or other workbook/worksheet applications. Excel files are widely used for storing and analyzing data, while CSV files are simple text files that contain comma-separated values.</p><p>In this blog post, we will take a look at how to use PowerShell to read, write, and manipulate Excel and CSV files. You will learn how to use built-in cmdlets, such as Import-Csv and Export-Csv, as well as a third-party module, <strong>ImportExcel</strong>, to work with these data formats. By the end of this blog post, you will be able to easily use PowerShell to handle CSV and XLSX files!</p><a href=#working-with-comma-separated-values-files><h1 id=working-with-comma-separated-values-files><span class=hanchor arialabel=Anchor></span>Working with Comma-separated Values Files</h1></a><p>PowerShell natively supports interacting with CSV files, which can enable you to get datasets into your scripts, and also provides an easy way to create objects to interact with in your scripts.</p><a href=#importing-csv-files><h2 id=importing-csv-files><span class=hanchor arialabel=Anchor></span>Importing CSV Files</h2></a><p>To import a CSV file into your terminal, use can use:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-PowerShell data-lang=PowerShell><span class=line><span class=cl><span class=nb>Import-CSV</span> <span class=n>-Path</span> <span class=s1>&#39;C:\Path\To\Your\File.csv&#39;</span>
+</span></span></code></pre></td></tr></table></div></div><p>This command will read the content of the file into the terminal and create a table-like object from the data contained in the CSV file. Often times you&rsquo;ll want to set the above command to a variable like so:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-PowerShell data-lang=PowerShell><span class=line><span class=cl><span class=nv>$var</span> <span class=p>=</span> <span class=nb>Import-CSV</span> <span class=n>-Path</span> <span class=s1>&#39;C:\Path\To\Your\File.csv&#39;</span>
+</span></span></code></pre></td></tr></table></div></div><p>Once this has been completed, you can run <code>$var</code> and you should see the object printed to the terminal:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>griff@vm923762 ~  $var = import-csv -path &#39;C:\temp\excel.csv&#39;
+</span></span><span class=line><span class=cl>griff@vm923762 ~  $var
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>index color
+</span></span><span class=line><span class=cl>----- -----
+</span></span><span class=line><span class=cl>1     red
+</span></span><span class=line><span class=cl>2     blue
+</span></span><span class=line><span class=cl>3     yellow
+</span></span><span class=line><span class=cl>4     green
+</span></span><span class=line><span class=cl>5     orange
+</span></span></code></pre></td></tr></table></div></div><p>You can then reference properties of the object using all your usual methods of interacting with objects.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>griff@vm923762 ~ $var.index
+</span></span><span class=line><span class=cl>1
+</span></span><span class=line><span class=cl>2
+</span></span><span class=line><span class=cl>3
+</span></span><span class=line><span class=cl>4
+</span></span><span class=line><span class=cl>5
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>griff@vm923762 ~ $var.color
+</span></span><span class=line><span class=cl>red
+</span></span><span class=line><span class=cl>blue
+</span></span><span class=line><span class=cl>yellow
+</span></span><span class=line><span class=cl>green
+</span></span><span class=line><span class=cl>orange
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>griff@vm923762 ~ $var | Where-Object { $_.index -eq 1 }
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>index color
+</span></span><span class=line><span class=cl>----- -----
+</span></span><span class=line><span class=cl>1     red
+</span></span></code></pre></td></tr></table></div></div><p>The above shows a foundation of how this can be useful in your automations, as you can load a dataset into PowerShell and then interact with the object as you would any other object.</p><a href=#modifying-csv-files><h2 id=modifying-csv-files><span class=hanchor arialabel=Anchor></span>Modifying CSV Files</h2></a><p>We can modify the data in the object which resulted from our import of the CSV file as well. This is done by iterating through the properties of the object and then altering data based on conditions we define. Here&rsquo;s an example:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-PowerShell data-lang=PowerShell><span class=line><span class=cl><span class=nv>$var</span> <span class=p>|</span> <span class=k>foreach</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=nv>$_</span><span class=p>.</span><span class=n>index</span> <span class=o>-eq</span> <span class=n>1</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$_</span><span class=p>.</span><span class=n>color</span> <span class=p>=</span> <span class=s2>&#34;Changed&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>And here is the new output of <code>$var</code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>griff@vm923762 ~ $var
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>index color
+</span></span><span class=line><span class=cl>----- -----
+</span></span><span class=line><span class=cl>1     Changed
+</span></span><span class=line><span class=cl>2     blue
+</span></span><span class=line><span class=cl>3     yellow
+</span></span><span class=line><span class=cl>4     green
+</span></span><span class=line><span class=cl>5     orange
+</span></span></code></pre></td></tr></table></div></div><p>You&rsquo;ll see in the above output that the the color for row 1 has been changed from <code>red</code> to <code>Changed</code>.
+There are a variety of ways to accomplish this; I just picked one example. Once you&rsquo;ve made your edits, all you need to do is then pipe your <code>$var</code> into the command to export as a CSV, which we&rsquo;ll talk about below.</p><a href=#exporting-csv-files><h2 id=exporting-csv-files><span class=hanchor arialabel=Anchor></span>Exporting CSV Files</h2></a><p>In addition to importing and modifying data from CSV files, we can export that data (or other data) out to a CSV file as well. This is accomplished by piping our <code>$var</code> object to the <code>Export-CSV</code> command:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-Powershell data-lang=Powershell><span class=line><span class=cl><span class=nv>$var</span> <span class=p>|</span> <span class=nb>Export-CSV</span> <span class=n>-Path</span> <span class=s1>&#39;C:\Path\To\Your\Destination.csv&#39;</span> <span class=n>-NoTypeInformation</span>
+</span></span></code></pre></td></tr></table></div></div><p>Opening the resulting CSV file (or importing it into PowerShell like we learned earlier), will result in the updated data as shown here:</p><table><thead><tr><th>index</th><th>color</th></tr></thead><tbody><tr><td>1</td><td>Changed</td></tr><tr><td>2</td><td>blue</td></tr><tr><td>3</td><td>yellow</td></tr><tr><td>4</td><td>green</td></tr><tr><td>5</td><td>orange</td></tr></tbody></table><p>I want to specifically point out the <code>-NoTypeInformation</code> parameter that we specified in the above command. If you&rsquo;re using Windows PowerShell (which is by default version 5.1 as bundled with Windows), then you&rsquo;ll want to specify this parameter which suppresses outputting the TYPE information header into your CSV file. By doing this, the first row of cells in your CSV file will actually be the table headers. If you do not specify this, then you get a row above your table headers that looks like this:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>#TYPE Selected.System.Management.ManagementObject
+</span></span></code></pre></td></tr></table></div></div><p>If I had to guess, I&rsquo;d say most people most of the time probably don&rsquo;t want this. Luckily, beginning in PowerShell 6, this has become the default so if you&rsquo;re using PowerShell 6 or PowerShell 7 you can skip adding this parameter, though it won&rsquo;t hurt if you continue to include it.</p><a href=#working-with-excel-files><h1 id=working-with-excel-files><span class=hanchor arialabel=Anchor></span>Working with Excel Files</h1></a><p>Now we know how to use the inbuilt commands in PowerShell to work with CSV files, but XLSX files are just as common. Unfortunately there is no native handling of this file format in PowerShell, however there is a third-party module that was developed that does a great job of allowing us to accomplish this; the module is the <strong>ImportExcel</strong> module.</p><p>You can install this module and then import it using the following command:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-PowerShell data-lang=PowerShell><span class=line><span class=cl><span class=nb>Install-Module</span> <span class=n>-Name</span> <span class=s1>&#39;ImportExcel&#39;</span> <span class=n>-Force</span>
+</span></span><span class=line><span class=cl><span class=nb>Import-Module</span> <span class=n>-Name</span> <span class=s1>&#39;ImportExcel&#39;</span> <span class=n>-Force</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#importing-excel-files><h2 id=importing-excel-files><span class=hanchor arialabel=Anchor></span>Importing Excel Files</h2></a><p>Importing an XLSX file is quite similar in terms of the command and syntax, just using a different module:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-PowerShell data-lang=PowerShell><span class=line><span class=cl><span class=nb>Import-Excel</span> <span class=n>-Path</span> <span class=s1>&#39;C:\Path\To\Your\File.xlsx&#39;</span>
+</span></span></code></pre></td></tr></table></div></div><p>Again, you&rsquo;ll often want to assign this to a variable so you can easily recall it and interact with it. I&rsquo;ll use <code>$var</code> again:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-PowerShell data-lang=PowerShell><span class=line><span class=cl><span class=nv>$var</span> <span class=p>=</span> <span class=nb>Import-Excel</span> <span class=n>-Path</span> <span class=s1>&#39;C:\Path\To\Your\File.xlsx&#39;</span>
+</span></span></code></pre></td></tr></table></div></div><p>In another similarity, here is what the output of <code>$var</code> looks like in this scenario:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>griff@vm923762 ~  $var = Import-Excel -Path &#39;C:\temp\excel.xlsx&#39;
+</span></span><span class=line><span class=cl>griff@vm923762 ~  $var
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>index color
+</span></span><span class=line><span class=cl>----- -----
+</span></span><span class=line><span class=cl> 1.00 red
+</span></span><span class=line><span class=cl> 2.00 blue
+</span></span><span class=line><span class=cl> 3.00 yellow
+</span></span><span class=line><span class=cl> 4.00 green
+</span></span><span class=line><span class=cl> 5.00 orange
+</span></span></code></pre></td></tr></table></div></div><p>Notice that in this instance, importing an Excel workbook instead of a comma-separated values file, that the values of each <code>index</code> are doubles instead of integers. While this is the case, if you select only that property of the object using <code>$var.index</code>, you&rsquo;ll see that the <code>.00</code> does not print to the terminal any longer &ndash; beware it is still a double even though it doesn&rsquo;t look like it. You can validate this by testing <code>$var.index[0] -is [double]</code> if you want. This won&rsquo;t prove to be an issue for many people, but for those instances where it is, you could convert the value for each iteration of <code>index</code> inside the object to a string, which then allows you to manipulate those values with convenient operators such as <code>.split</code> and <code>.substring</code>. But I digress.</p><p>For the most part, it works pretty much the same as with importing CSVs. There is some additional functionality, such as the ability to import specific worksheets from the workbook using the <code>-Worksheet</code> parameter, or filter which columns/rows you&rsquo;d like to import using <code>-StartRow</code>, <code>-EndRow</code>, <code>-StartColumn</code>, and <code>-EndColumn</code> as well as other options.</p><a href=#modifying-excel-files><h2 id=modifying-excel-files><span class=hanchor arialabel=Anchor></span>Modifying Excel Files</h2></a><p>We can use the same method we used earlier to modify the object we imported from the Excel file.
+For this example, let&rsquo;s increment the index of each row by 1:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-PowerShell data-lang=PowerShell><span class=line><span class=cl><span class=nv>$var</span> <span class=p>|</span> <span class=k>foreach</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=nv>$_</span><span class=p>.</span><span class=n>index</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$_</span><span class=p>.</span><span class=n>index</span> <span class=p>=</span> <span class=nv>$_</span><span class=p>.</span><span class=n>index</span> <span class=p>+</span> <span class=n>1</span><span class=p>.</span><span class=n>00</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>The successful output of our modified <code>$var</code> is now:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>griff@vm923762 ~ $var
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>index color
+</span></span><span class=line><span class=cl>----- -----
+</span></span><span class=line><span class=cl> 2.00 red
+</span></span><span class=line><span class=cl> 3.00 blue
+</span></span><span class=line><span class=cl> 4.00 yellow
+</span></span><span class=line><span class=cl> 5.00 green
+</span></span><span class=line><span class=cl> 6.00 orange
+</span></span></code></pre></td></tr></table></div></div><p>Just like with our CSV example earlier, now to export it to Excel, you&rsquo;ll pipe your <code>$var</code> to the command to export as an Excel file, which we&rsquo;ll look at below.</p><a href=#exporting-excel-files><h2 id=exporting-excel-files><span class=hanchor arialabel=Anchor></span>Exporting Excel Files</h2></a><p>To export your object to an XLSX file, pipe the <code>$var</code> to <code>Export-Excel</code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-PowerShell data-lang=PowerShell><span class=line><span class=cl><span class=nv>$var</span> <span class=p>|</span> <span class=nb>Export-Excel</span> <span class=n>-Path</span> <span class=s1>&#39;C:\temp\output2.xlsx&#39;</span>
+</span></span></code></pre></td></tr></table></div></div><p>There are <em>a lot</em> of optional parameters for this command, and I highly recommend checking out the module&rsquo;s documentation, which can be found the in Additional Resources section at the end of this post. You can create pivot tables, name worksheets, use multiple worksheets, and all kinds of nifty things!</p><p>Opening our exported XLSX file (or importing it into the terminal as we learned earlier), shows the following:</p><table><thead><tr><th>index</th><th>color</th></tr></thead><tbody><tr><td>2</td><td>red</td></tr><tr><td>3</td><td>blue</td></tr><tr><td>4</td><td>yellow</td></tr><tr><td>5</td><td>green</td></tr><tr><td>6</td><td>orange</td></tr></tbody></table><a href=#conclusion><h1 id=conclusion><span class=hanchor arialabel=Anchor></span>Conclusion</h1></a><p>And here we are! In this post we looked at how to work with CSV and XLSX files in PowerShell, from importing them, modifying them, and exporting them as well. With these skills, you can automate and simplify your day-to-day data-related tasks and level up your checks and reporting. I hope that you found this blog post helpful!</p><a href=#additional-resources><h1 id=additional-resources><span class=hanchor arialabel=Anchor></span>Additional Resources</h1></a><ul><li><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/import-csv?view=powershell-7.3" rel=noopener>Import-Csv (Microsoft.PowerShell.Utility) - PowerShell | Microsoft Learn</a></li><li><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-7.3" rel=noopener>Export-Csv (Microsoft.PowerShell.Utility) - PowerShell | Microsoft Learn</a></li><li><a href=https://devblogs.microsoft.com/scripting/introducing-the-powershell-excel-module-2/ rel=noopener>Introducing the PowerShell Excel Module - Scripting Blog (microsoft.com)</a></li><li><a href=https://github.com/dfinke/ImportExcel rel=noopener>GitHub - dfinke/ImportExcel: PowerShell module to import/export Excel spreadsheets, without Excel</a></li></ul></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/toc/ data-ctx="Working with CSV and XLSX files in PowerShell" data-src=/toc class=internal-link>Table of Contents</a></li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://blog.griff.systems/js/graph.6579af7b10c818dbd2ca038702db0224.js></script></div></div><div id=contact_buttons><footer><p>Made by Barker, Griffeth using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2023</p><ul><li><a href=https://blog.griff.systems/>Home</a></li><li><a href=https://mastodon.social/@kalipike>Follow me on Mastodon</a></li><li><a href=https://matrix.to/#/@kalipike:matrix>Chat with me on Matrix</a></li></ul></footer></div></div></body></html>
