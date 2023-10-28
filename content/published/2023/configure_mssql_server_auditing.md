@@ -180,7 +180,7 @@ The `$SvrAuditObj` and `$SvrAuditSpecObj` can be customized to audit different a
 You can copy/paste the above script into a file and save it as a .ps1, or if you'd like you can download the script from my public GitHub repository to your user profile's Downloads folder using this command at a PowerShell terminal:
 
 ```PowerShell
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/griffeth-barker/public/main/configure_mssql_server_auditing.ps1" -OutFile "$($env:USERPROFILE)\Downloads\configure_mssql_server_auditing.ps1"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/griffeth-barker/public/main/powershell/configure_mssql_server_auditing.ps1" -OutFile "$($env:USERPROFILE)\Downloads\configure_mssql_server_auditing.ps1"
 ```
 
 As always, you should fully understand any command or script before running it in your environment. 

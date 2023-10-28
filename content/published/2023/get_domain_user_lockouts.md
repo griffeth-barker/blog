@@ -51,7 +51,7 @@ This can save a significant amount of time instead of retracing steps and pourin
 You can copy/paste the above script into a file and save it as a .ps1, or if you'd like you can download the script from my public GitHub repository to your user profile's Downloads folder using this command at a PowerShell terminal:
 
 ```PowerShell
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/griffeth-barker/public/main/get_domain_user_lockouts.ps1" -OutFile "$($env:USERPROFILE)\Downloads\get_domain_user_loc
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/griffeth-barker/public/main/powershell/get_domain_user_lockouts.ps1" -OutFile "$($env:USERPROFILE)\Downloads\get_domain_user_loc
 kouts.ps1"
 ```
 
