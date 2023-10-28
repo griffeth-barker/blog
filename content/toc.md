@@ -6,14 +6,13 @@ Blog posts by topic.
 ## Adobe
 - [Fix "Please wait while the document is being prepared for" message in Adobe Reader](published/2021/fix_please_wait_while_the_document_is_being_prepared_for_message_in_adobe_reader.md) 
 ## Ansible
-`TASK [Gathering Facts]
+`TASK [Gathering Facts]` is still running...check back soon!
 ## Devolutions
 - [Fixing PowerShell Remote Console in Devolutions Remote Desktop Manager](published/2023/fixing_powershell_remote_console_in_devolutions_rdm.md)
 ## Fediverse
 - [Stepping into the Fediverse](/published/2023/stepping_into_the_fediverse)
 ## Hardware
 - [Review: Samsung Galaxy Tab S6](published/2020/review_samsung_galaxy_tab_s6.md)
-
 ## KeyWatcher True Touch
 - [Get KeyWatcher True Touch Profile IDs](published/2023/get_kw_truetouch_profile_ids.md)
 ## Miscellaneous
@@ -24,6 +23,7 @@ Blog posts by topic.
 - [Better than Just Pinging](published/2023/better_than_just_pinging.md)
 - [Common Helpdesk PowerShell Commands](published/2023/common_helpdesk_powershell_commands.md)
 - [Configure Microsoft SQL Server Auditing](published/2023/configure_mssql_server_auditing.md)
+- [Customize your PowerShell Profile](published/2023/customize_your_powershell_profile.md)
 - [Get Your Public IP Address Using the Terminal](published/2023/get_your_public_ip_address_using_terminal.md)
 - [Get a List of a Domain User's Recent Lockouts](published/2023/get_domain_user_lockouts.md)
 - [Keeping software up to date using Chocolatey](/published/2020/keeping_software_up_to_date_using_chocolatey.md)
@@ -46,7 +46,7 @@ Synchronizing distribution points...check back soon!
 ## Ubiquiti
 - [Install Ubiquiti UniFi controller on Debian 10 Linux](/published/2021/install_ubiquiti_unifi_controller_on_debian_10_linux.md)
 ## VMware
-Refreshing statistics...check back soon!
+Cloning VMs from content library...check back soon!
 ## Windows
 - [Fix mapped drives not showing in Open and Save dialogs in Windows](/published/2021/fix_mapped_drives_not_showing_in_dialogues.md) 
 
