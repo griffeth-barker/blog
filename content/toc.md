@@ -17,6 +17,9 @@ Blog posts by topic.
 - [Get KeyWatcher True Touch Profile IDs](published/2023/get_kw_truetouch_profile_ids.md)
 ## Miscellaneous
 - [My favorite tools as a systems administrator](/published/2023/my_favorite_tools_as_a_systems_administrator)
+
+## Obsidian MD
+- [Fixing Last Modified Dates on Notes when Migrating to Obsidian](published/2023/fix_last_modified_dates_on_notes_when_migrating_to_obsidian.md)
 ## PowerShell
 - [Administer Windows Core Print Servers](/published/2023/administer_windows_core_print_servers.md)
 - [Bash Command Alternatives in PowerShell](published/2023/bash_command_alternatives_in_powershell.md)
