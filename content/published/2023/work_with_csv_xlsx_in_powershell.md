@@ -9,7 +9,7 @@ tags:
 # Introduction
 PowerShell is a powerful scripting language that can automate a wide variety of tasks. One common activity that IT professionals need to perform is working with data files such as CSV and XLSX files, both of which are typically associated with Microsoft Excel or other workbook/worksheet applications. Excel files are widely used for storing and analyzing data, while CSV files are simple text files that contain comma-separated values but can be displayed in Excel similarly to an Excel workbook, albeit without formatting.
 
-In this blog post, we will take a look at how to use PowerShell to read, write, and manipulate Excel and CSV files. You will learn how to use built-in cmdlets, such as `Import-Csv` and `Export-Csv`, as well as a third-party module, **ImportExcel**, to work with these data formats. By the end of this blog post, you will be able to easily use PowerShell to handle CSV and XLSX files!
+In this blog post, we will take a look at some low-level methods of using PowerShell to read, write, and manipulate Excel and CSV files. You will learn how to use built-in cmdlets, such as `Import-Csv` and `Export-Csv`, as well as a third-party module, **ImportExcel**, to perform basic work with these data formats. By the end of this blog post, you will be able to easily use PowerShell to handle CSV and XLSX files!
 
 # Working with Comma-separated Values Files
 PowerShell natively supports interacting with CSV files, which can enable you to get datasets into your scripts, and also provides an easy way to create objects to interact with in your scripts.
@@ -69,7 +69,7 @@ index color
 The above shows a foundation of how this can be useful in your automations, as you can load a dataset into PowerShell and then interact with the object as you would any other object, especially iterating through the object.
 
 ## Modifying CSV Files
-We can modify the data in the object which resulted from our import of the CSV file as well. This is done by iterating through the properties of the object and then altering data based on conditions we define. Here's an example:
+We can modify the data in the object which resulted from our import of the CSV file as well. This is done by iterating through the properties of the object and then altering data based on conditions we define. Here's an example of iterating through the object to make batch changes:
 
 ```PowerShell
 $var | foreach {
@@ -95,6 +95,12 @@ index color
 
 You'll see in the above output that the the color for row 1 has been changed from `red` to `Changed`.
 There are a variety of ways to accomplish this; I just picked one example. Once you've made your edits, all you need to do is then pipe your `$var` into the command to export as a CSV, which we'll talk about below.
+
+We can also make a single change like so:
+
+```PowerShell
+($var | Where-Object { $_.index -eq 1 }).color = "Changed"
+```
 
 ## Exporting CSV Files
 In addition to importing and modifying data from CSV files, we can export that data (or other data) out to a CSV file as well. This is accomplished by piping our `$var` object to the `Export-CSV` command:
@@ -189,10 +195,22 @@ index color
  6.00 orange
 ```
 
+Again, we can change a single value like so:
+
+```PowerShell
+($var | Where-Object { $_.index -eq 1 }).color = "Changed"
+```
+
 Just like with our CSV example earlier, now to export it to Excel, you'll pipe your `$var` to the command to export as an Excel file, which we'll look at below.
 
 ## Exporting Excel Files
-To export your object to an XLSX file, pipe the `$var` to `Export-Excel`:
+To export your object to an XLSX file:
+
+```PowerShell
+Export-Excel -Path 'C:\temp\output2.xlsx' -InputObject $var
+```
+
+Alternatively, you can pipe `$var` to the `Export-Excel` command.
 
 ```PowerShell
 $var | Export-Excel -Path 'C:\temp\output2.xlsx'
@@ -211,10 +229,15 @@ Opening our exported XLSX file (or importing it into the terminal as we learned 
 | 6     | orange |
 
 # Conclusion
-And here we are! In this post we looked at how to work with CSV and XLSX files in PowerShell, from importing them, modifying them, and exporting them as well. With these skills, you can automate and simplify your day-to-day data-related tasks and level up your checks and reporting. I hope that you found this blog post helpful!
+And here we are! 
+
+There are other methods of interacting with comma-separated values files and Excel files, some of which are cleaner and more robust as well. The advantage to the methods in this post is that it brings the data into PowerShell as a basic PSCustomObject that you can manipulate pretty much like you would anything else. The disadvantages to this is that these methods lack features that are available in far better and more robust solutions such as, and also lacks the ability to scale nicely as you need to make more and more interactions with the files; if your needs are more complex or you're looking for a more tenable solution, I highly recommend checking out the **PSWriteOffice** project on GitHub! 
+
+In this post we looked at how to work with CSV and XLSX files in PowerShell, from importing them, modifying them, and exporting them as well. With these skills, you can automate and simplify your day-to-day data-related tasks and level up your checks and reporting. I hope that you found this blog post helpful!
 
 # Additional Resources
 - [Import-Csv (Microsoft.PowerShell.Utility) - PowerShell | Microsoft Learn](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/import-csv?view=powershell-7.3)
 - [Export-Csv (Microsoft.PowerShell.Utility) - PowerShell | Microsoft Learn](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-7.3)
 - [Introducing the PowerShell Excel Module - Scripting Blog (microsoft.com)](https://devblogs.microsoft.com/scripting/introducing-the-powershell-excel-module-2/)
 - [GitHub - dfinke/ImportExcel: PowerShell module to import/export Excel spreadsheets, without Excel](https://github.com/dfinke/ImportExcel)
+- [GitHub - EvotecIT/PSWriteOffice: Experimental PowerShell Module to create and edit Microsoft Word, Microsoft Excel, and Microsoft PowerPoint documents without having Microsoft Office installed.](https://github.com/EvotecIT/PSWriteOffice)
