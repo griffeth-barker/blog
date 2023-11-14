@@ -1,11 +1,13 @@
 ---
-title: "Common Helpdesk PowerShell Commans"
+title: Common Helpdesk PowerShell Commands
 tags:
   - PowerShell
   - tools
   - utilities
   - helpdesk
-  - Terminal tip tuesdays
+  - Terminal
+  - tip
+  - tuesdays
 ---
 
 Here is a small collection of PowerShell commands that might be helpful to any user administrators or helpdesk or service delivery technicians.
