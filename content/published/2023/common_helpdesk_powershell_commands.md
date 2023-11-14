@@ -5,9 +5,7 @@ tags:
   - tools
   - utilities
   - helpdesk
-  - Terminal
-  - tip
-  - tuesdays
+  - TerminalTipTuesday
 ---
 
 Here is a small collection of PowerShell commands that might be helpful to any user administrators or helpdesk or service delivery technicians.

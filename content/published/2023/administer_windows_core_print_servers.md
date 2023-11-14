@@ -6,7 +6,6 @@ tags:
   - Windows Server Core
   - Terminal Tip Tuesdays
 ---
-
 # Administer Windows Core Print Servers
 You RDP to a print server and where you expected to see a Windows Server desktop environment, you are presented with a black screen with nothing more than a terminal window. How are you going to administer the print server?
 
