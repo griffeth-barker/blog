@@ -29,6 +29,7 @@ Blog posts by topic.
 - [Customize your PowerShell Profile](published/2023/customize_your_powershell_profile.md)
 - [Get Your Public IP Address Using the Terminal](published/2023/get_your_public_ip_address_using_terminal.md)
 - [Get a List of a Domain User's Recent Lockouts](published/2023/get_domain_user_lockouts.md)
+- [Getting Download Links from Webpages using PowerShell](published/2023/getting_download_links_from_webpages.md)
 - [Keeping software up to date using Chocolatey](/published/2020/keeping_software_up_to_date_using_chocolatey.md)
 - [Search Log Files Using PowerShell](/published/2023/search_log_files_using_powershell.md)
 - [Use PowerShell to remove a network printer for all users of a computer](/published/2020/powershell_remove_net_printer_for_all_users.md) 
