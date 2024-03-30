@@ -15,9 +15,10 @@ Blog posts by topic.
 - [Review: Samsung Galaxy Tab S6](published/2020/review_samsung_galaxy_tab_s6.md)
 ## KeyWatcher True Touch
 - [Get KeyWatcher True Touch Profile IDs](published/2023/get_kw_truetouch_profile_ids.md)
+## Microsoft 365
+- [Microsoft Loop: Bringing Collaboration Full Circle](published/2024/microsoft_loop_bringing_collaboration_full_circle.md)
 ## Miscellaneous
 - [My favorite tools as a systems administrator](/published/2023/my_favorite_tools_as_a_systems_administrator)
-
 ## Obsidian MD
 - [Fixing Last Modified Dates on Notes when Migrating to Obsidian](published/2023/fix_last_modified_dates_on_notes_when_migrating_to_obsidian.md)
 ## PowerShell
