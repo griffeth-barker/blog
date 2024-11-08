@@ -25,7 +25,7 @@ This protective measure acts as a policy/enforcement layer for SPF and DKIM, pro
 
 Like SPF and DKIM, this is accomplished using TXT records in your domain's public DNS. Not only does this help prevent spoofing, but it provides visibility as to who is sending on behalf of your domain. Unlike SPF and DKIM, DMARC has those two checks as dependencies, and cannot be used by itself. While it has these requirements, it also relies on simple DNS records, and there are relatively few (if any) valid reasons to disregard setting up DMARC.
 
-As an aside, because this is the policy/enforcement layer and management of larger quantities of domains can become cumbersome, businesses with many domains may benefit from using a third-party DMARC management tool to put all of the policies in a single place for ease of management and visibility. There are a variety of them available, including popular options such as dmarcly and Mimecast DMARC Analyzer.
+As an aside, because this is the policy/enforcement layer and management of larger quantities of domains can become cumbersome, businesses with many domains may benefit from using a third-party DMARC management tool to put all of the policies in a single place for ease of management and visibility. There are a variety of them available, including popular options such as [dmarcly](https://dmarcly.com/) and [Mimecast DMARC Analyzer](https://www.mimecast.com/products/dmarc-analyzer/).
 
 ---
 
