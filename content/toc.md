@@ -42,6 +42,8 @@ Blog posts by topic.
 - [Fix Proxmox node cannot update packages using apt-get](/published/2022/fix_proxmox_node_cannot_update_packages_via_apt-get.md)
 - [Revert node certificates to default in Proxmox VE](/published/2021/revert_node_certificates_to_default_in_proxmox_ve.md)
 - [Setup print server on Windows Server Core](/published/2022/setup_print_server_on_windows_server_core.md)
+## Security
+- [Thwarting "Spoofy" Business with SPF, DKIM, and DMARC](published/2024/thwarting-spoofy-business-with-spf-dkim-dmarc.md)
 ## Software
 - [Getting organized with Notion](/published/2022/getting_organized_with_notion.md)
 - [Password managers and why you should be using one](published/2021/password_managers_and_why_you_should_be_using_one.md) 
