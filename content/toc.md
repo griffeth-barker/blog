@@ -43,6 +43,7 @@ Blog posts by topic.
 - [Revert node certificates to default in Proxmox VE](/published/2021/revert_node_certificates_to_default_in_proxmox_ve.md)
 - [Setup print server on Windows Server Core](/published/2022/setup_print_server_on_windows_server_core.md)
 ## Security
+- [Simon says, "Set up SAML SSO."](/published/2024/simon-says-setup-saml-sso.md)
 - [Thwarting "Spoofy" Business with SPF, DKIM, and DMARC](published/2024/thwarting-spoofy-business-with-spf-dkim-dmarc.md)
 ## Software
 - [Getting organized with Notion](/published/2022/getting_organized_with_notion.md)
