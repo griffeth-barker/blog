@@ -7,6 +7,8 @@ Blog posts by topic.
 - [Fix "Please wait while the document is being prepared for" message in Adobe Reader](published/2021/fix_please_wait_while_the_document_is_being_prepared_for_message_in_adobe_reader.md) 
 ## Ansible
 `TASK [Gathering Facts]` is still running...check back soon!
+## Artificial Intelligence
+- [Supercharge your Scripting with Supermaven and Cursor](published/2024/supercharging-your-scripting-supermaven-cursor.md)
 ## Devolutions
 - [Fixing PowerShell Remote Console in Devolutions Remote Desktop Manager](published/2023/fixing_powershell_remote_console_in_devolutions_rdm.md)
 ## Fediverse
