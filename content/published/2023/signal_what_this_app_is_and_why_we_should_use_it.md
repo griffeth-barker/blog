@@ -36,7 +36,7 @@ Signal provides a variety of optional features that we've seen claim popularity 
 - Registering with your phone number instead of creating a complicated account
 - No cellular service required when sending between Signal users as long as you have WiFi (think like iMessage or Facebook Messenger, both of which may invade your privacy, especially given their companies' history with data and privacy issues)
 
-...and all of it can be encrypted and completely private. If all your contacts aren't on Signal yet, that's okay; it won't get in the way of communicating with them. Signal handles regular unencrypted text, multimedia, and group messages just a quickly and elegantly as Signal messages.
+...and all of it can be encrypted and completely private. ~~If all your contacts aren't on Signal yet, that's okay; it won't get in the way of communicating with them. Signal handles regular unencrypted text, multimedia, and group messages just a quickly and elegantly as Signal messages.~~ **Updated 2024-12-04: Signal has since removed the ability to handle non-Signal messages to prevent any confusion as to whether messages you're sending/receiving are actually encrypted or not. Now, you'll just have to convince your friends, family, and peers to switch to Signal.**
 
 Funded by grants and donations, open-source, peer-reviewed and audited, Signal is a best bet in maintaining your privacy while communicating.
 
