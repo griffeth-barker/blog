@@ -4,7 +4,7 @@ enableToc: false
 ---
 
 # 🌊 Dive right in  
-[Table of Contents](toc.md).
+[Table of Contents](toc.md)
 
 # 🏆 Achievement Get  
 You've found my blog! This site is a small side project of mine. I take a lot of notes throughout the course of my work in IT. I've forgotten more than I'll ever learn and I try to remedy that by taking detailed notes and writing them out into reproduceable guides and documentation. The more polished of those notes will be published here in the hopes that they might assist another systems administrator or IT professional headed down the same path or in search of the same answers. 
