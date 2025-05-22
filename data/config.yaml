@@ -18,9 +18,9 @@ search:
   operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
   operandIndexId: "REPLACE-WITH-YOUR-OPERAND-INDEX-ID"
 description:
-  "Intermittent musings from yet another systems administrator."
+  "Intermittent musings from yet another systems engineer."
 page_title:
-  "blog.griff.systems"
+  "griff.systems"
 links:
   - link_name: Follow me on BlueSky
     link: https://griff.systems/bluesky
