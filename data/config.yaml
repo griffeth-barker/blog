@@ -1,6 +1,6 @@
-name: Barker, Griff
-enableToc: false
-openToc: false
+name: Griff Barker
+enableToc: true
+openToc: true
 enableLinkPreview: true
 enableLatex: false
 enableCodeBlockTitle: true
