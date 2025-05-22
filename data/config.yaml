@@ -23,6 +23,10 @@ page_title:
   "blog.griff.systems"
 links:
   - link_name: Follow me on BlueSky
-    link: https://bsky.app/profile/griff.systems
+    link: https://griff.systems/bluesky
+  - link_name: Connect with me on LinkedIn
+    link: https://griff.systems/linkedin
+  - link_name: Follow me on GitHub
+    link: https://griff.systems/github
   - link_name: Message me on Signal
     link: https://griff.systems/signal
