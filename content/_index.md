@@ -16,7 +16,7 @@ The occasional non-technical post may find it's way here as well, since I love a
 
 >[!faq]  About this Site  
 >  
->This blog is hosted via [GitHub Pages](https://pages.github.com/), using the [Hugo SSG](https://gohugo.io/) (static-site generator); this is packaged nicely by Jacky Zhao's [Quartz](https://quartz.jzhao.xyz/). The site content is written in [Markdown](https://www.markdownguide.org/)and managed in [Obsidian](https://obsidian.md/), which is my preferred knowledge management/notetaking application.
+>This blog is hosted via [GitHub Pages](https://pages.github.com/), using Jacky Zhao's [Quartz](https://quartz.jzhao.xyz/). The site content is written in [Markdown](https://www.markdownguide.org/)and managed in [Obsidian](https://obsidian.md/), which is my preferred knowledge management/notetaking application.
 >  
 >Being able to write in Markdown makes things much simpler for me, and since I already write Markdown in Obsidian and had a GitHub account with a couple of other repositories that I push notes to, it just seemed natural to bring those things together for this blog. I was very lucky to stumble onto the Quartz project which made it pretty simple to get going. 
 >  
