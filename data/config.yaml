@@ -1,4 +1,4 @@
-name: Barker, Griffeth
+name: Barker, Griff
 enableToc: false
 openToc: false
 enableLinkPreview: true
@@ -22,7 +22,7 @@ description:
 page_title:
   "blog.griff.systems"
 links:
-  - link_name: Follow me on Mastodon
-    link: https://mastodon.social/@kalipike
-  - link_name: Chat with me on Matrix
-    link: https://matrix.to/#/@kalipike:matrix
+  - link_name: Follow me on BlueSky
+    link: https://bsky.app/profile/griff.systems
+  - link_name: Message me on Signal
+    link: https://griff.systems/signal
