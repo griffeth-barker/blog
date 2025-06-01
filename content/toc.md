@@ -36,6 +36,7 @@ Blog posts by topic.
 - [Keeping software up to date using Chocolatey](/published/2020/keeping_software_up_to_date_using_chocolatey.md)
 - [Search Log Files Using PowerShell](/published/2023/search_log_files_using_powershell.md)
 - [Rolling Dice in PowerShell](/published/2025/rolling-dice-in-powershell.md)
+- [Uninstall Windows Copilot using PowerShell](/published/2025/uninstall-windows-copilot.md)
 - [Use PowerShell to remove a network printer for all users of a computer](/published/2020/powershell_remove_net_printer_for_all_users.md) 
 - [Use PowerShell to setup a network printer for all users of a computer](/published/2020/powershell_setup_net_printer_for_all_users.md)
 - [Using the Terminal for Basic Network Troubleshooting](published/2023/using_terminal_for_basic_network_troubleshooting.md)
