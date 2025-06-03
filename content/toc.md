@@ -1,7 +1,7 @@
 ---
 title: "Table of Contents"
 ---
-Blog posts by topic.
+Blog posts arranged by topic.
 
 ## Adobe
 - [Fix "Please wait while the document is being prepared for" message in Adobe Reader](published/2021/fix_please_wait_while_the_document_is_being_prepared_for_message_in_adobe_reader.md) 
@@ -34,6 +34,7 @@ Blog posts by topic.
 - [Get a List of a Domain User's Recent Lockouts](published/2023/get_domain_user_lockouts.md)
 - [Getting Download Links from Webpages using PowerShell](published/2023/getting_download_links_from_webpages.md)
 - [Keeping software up to date using Chocolatey](/published/2020/keeping_software_up_to_date_using_chocolatey.md)
+- [Import PowerShell Modules Directly from GitHub/GitLab without Installing](/published/2025/import-powershell-modules-directly-from-web.md)
 - [Search Log Files Using PowerShell](/published/2023/search_log_files_using_powershell.md)
 - [Rolling Dice in PowerShell](/published/2025/rolling-dice-in-powershell.md)
 - [Uninstall Windows Copilot using PowerShell](/published/2025/uninstall-windows-copilot.md)
