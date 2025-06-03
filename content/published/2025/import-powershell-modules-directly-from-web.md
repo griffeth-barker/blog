@@ -1,10 +1,3 @@
----
-title: "{{title}}"
-date: "{{date}}"
-tags:
-  - 
----
-
 # Import PowerShell Modules Directly from GitHub/GitLab without Installing
 We know and love PowerShell modules. They do a lot of heavy lifting in the automation world! However, you might find yourself in a situation where you are not able to install a module on a system, but still want to make use of its functionality. For this purpose, I have `Import-ModuleFromGitx`.
 
