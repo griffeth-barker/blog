@@ -21,11 +21,11 @@ html {
 }
 
 .singlePage {
-  padding: 4em 10vw;    // was 30vw
+  padding: 4em 30vw;
   margin: 0 auto;
-  max-width: 1400px;    // was 1000px, or remove this line for no limit
+  max-width: 1000px;
   @media all and (max-width: 1200px) {
-    padding: 25px 2vw;  // was 5vw
+    padding: 25px 5vw;
   }
 }
 
