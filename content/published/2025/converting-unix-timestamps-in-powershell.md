@@ -1,10 +1,3 @@
----
-title: "{{title}}"
-date: "{{date}}"
-tags:
-  - 
----
-
 # Converting Unix timestamps in PowerShell
 
 ## The Need
