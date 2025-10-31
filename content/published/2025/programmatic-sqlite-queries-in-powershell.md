@@ -19,13 +19,13 @@ So where does this go from here? Here's my train of thought from the other day.
 
 Can I pass the string in from the pipeline?
 ```powershell
-"SELECT * FROM EnablementReporting" | sqlite3
+"SELECT * FROM EnablementReporting" | sqlite3 ./path/to/database.db
 ```
 Yep, that worked. Selecting information is pretty easy. 
 
 What about doing inserts?
 ```powershell
-sqlite3 "INSERT INTO EnablementReporting ('Username','Status','DisabledDate') VALUES ('JohnSmith','Disabled','2025-10-30')"
+sqlite3 ./path/to/database.db "INSERT INTO EnablementReporting ('Username','Status','DisabledDate') VALUES ('JohnSmith','Disabled','2025-10-30')"
 ```
 That worked as expected, too. 
 
