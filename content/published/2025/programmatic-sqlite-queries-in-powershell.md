@@ -1,6 +1,6 @@
 ---
-title: "{{title}}"
-date: "{{date}}"
+title: "Programmatic SQLite Queries in PowerShell"
+date: "2025-10-31"
 tags:
   - 
 ---
